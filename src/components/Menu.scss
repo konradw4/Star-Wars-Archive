@@ -1,0 +1,16 @@
+.menu {
+    ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        color: #e4b202;
+        font-size: 1.3em;
+        margin: 0 1em;
+        cursor: pointer;
+    }
+}

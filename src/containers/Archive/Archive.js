@@ -1,7 +1,13 @@
-import React from 'react'
+import React from 'react';
+
+import Menu from '../../components/Menu';
+
+import { MENU } from '../../consts/menu.const';
 
 function Archive() {
-    return <p>archive works</p>
+    return (
+      <Menu menu={MENU}></Menu>
+    );
 }
 
-export default Archive
+export default Archive;
