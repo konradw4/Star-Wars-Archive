@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 
 import { useMenu } from '../../context/MenuContext';
 import { getData } from '../../data/dataApi';
+import ListELement from '../ListItem/ListItem';
+
+import './List.scss';
 
 const List = () => {
     const [listItems, setListItems] = useState([]);
@@ -18,9 +21,9 @@ const List = () => {
 
     return (
         <section>
-            <ul>
-                {listItems.map((element) => (
-                    <li key={element.name}>{element.name}</li>
+            <ul className='List'>
+                {listItems.map((item) => (
+                    <ListELement item={item}></ListELement>
                 ))}
             </ul>
         </section>

@@ -1,3 +1,5 @@
+@import '../../styles/colors.scss';
+
 .menu {
     ul {
         display: flex;
@@ -8,9 +10,10 @@
     }
 
     li {
-        color: #e4b202;
+        color: $starry-color;
         font-size: 1.3em;
         margin: 0 1em;
         cursor: pointer;
+        text-transform: capitalize;
     }
 }

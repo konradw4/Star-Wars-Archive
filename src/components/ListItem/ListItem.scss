@@ -1,0 +1,18 @@
+@import '../../styles/colors.scss';
+
+.ListItem {
+    width: 25%;
+    margin: 1em;
+    padding: 1em;
+    border: 2px solid #e4b202;
+    border-radius: 1em;
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+
+    &:hover {
+        font-weight: 600;
+        background-color: $starry-color;
+    }
+}
