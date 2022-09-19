@@ -5,6 +5,7 @@ import Archive from './components/Archive/Archive';
 
 import './index.scss';
 import Logo from '../assets/star-wars-logo.png';
+import ModalProvider from './context/ModalContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,7 +14,9 @@ root.render(
             <img src={Logo} />
         </header>
         <main>
-            <Archive></Archive>
+            <ModalProvider>
+                <Archive></Archive>
+            </ModalProvider>
         </main>
         <footer></footer>
     </React.StrictMode>

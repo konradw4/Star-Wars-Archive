@@ -23,7 +23,7 @@ const List = () => {
         <section>
             <ul className='List'>
                 {listItems.map((item) => (
-                    <ListELement item={item}></ListELement>
+                    <ListELement key={item.name} item={item}></ListELement>
                 ))}
             </ul>
         </section>

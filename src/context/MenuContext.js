@@ -7,7 +7,7 @@ const MenuUpdateContext = React.createContext();
 export const useMenu = () => useContext(MenuContext);
 export const useMenuUpdate = () => useContext(MenuUpdateContext);
 
-export const MenuProvider = ({ children }) => {
+const MenuProvider = ({ children }) => {
     const [menuElement, setMenuElement] = useState(CATEGORY.people);
 
     return (
@@ -18,3 +18,5 @@ export const MenuProvider = ({ children }) => {
         </MenuContext.Provider>
     );
 };
+
+export default MenuProvider;
