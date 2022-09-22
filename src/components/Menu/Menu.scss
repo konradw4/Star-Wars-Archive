@@ -1,7 +1,14 @@
 @import '../../styles/colors.scss';
+@import '../../styles/screenSizes.scss';
 
 .menu {
+    padding: 0 2em;
+
     ul {
+        @media (max-width: $small) {
+            display: none;
+        };
+
         display: flex;
         justify-content: center;
         list-style: none;

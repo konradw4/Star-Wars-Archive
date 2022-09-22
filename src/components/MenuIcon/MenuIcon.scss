@@ -1,0 +1,34 @@
+@import '../../styles/colors.scss';
+@import '../../styles/screenSizes.scss';
+
+.menu-icon {
+    @media (min-width: $small) {
+        display: none;
+    }
+
+    position: absolute;
+    top: 4em;
+
+    span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background-color: $starry-color;
+        border-radius: 3px;
+        transition: 0.4s;
+    }
+
+    &.change {
+        span:first-child {
+            transform: translate(0, 0.6em) rotate(-45deg);
+        }
+        span:nth-child(2) {
+            opacity: 0;
+        }
+        span:nth-child(3) {
+            transform: translate(0, -0.5em) rotate(45deg);
+        }
+    }
+}

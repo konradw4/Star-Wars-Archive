@@ -1,6 +1,11 @@
 @import '../../styles/colors.scss';
+@import '../../styles/screenSizes.scss';
 
 .ListItem {
+    @media (max-width: $small) {
+        width: 100%;
+    }
+
     width: 25%;
     margin: 1em;
     padding: 1em;
