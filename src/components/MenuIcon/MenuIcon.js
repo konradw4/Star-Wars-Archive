@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 
 import './MenuIcon.scss';
 
-const MenuIcon = () => {
+const MenuIcon = ({ showMenu }) => {
     const [open, setOpen] = useState(false);
     const menuRef = useRef();
 
@@ -10,6 +10,8 @@ const MenuIcon = () => {
         open
             ? menuRef.current.classList.add('change')
             : menuRef.current.classList.remove('change');
+
+        showMenu(open);
     }, [open]);
 
     return (

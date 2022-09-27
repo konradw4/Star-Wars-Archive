@@ -4,6 +4,26 @@
 .menu {
     padding: 0 2em;
 
+    @media (max-width: $small) {
+        max-height: 0;
+    };
+
+    &.open {
+        max-height: 500px;
+        transition: max-height .25s ease-in;
+        background-color: $menu-color;
+        box-shadow: 8px 8px 24px 0px rgb(66 68 90);
+
+        ul {
+            display: block;
+            opacity: 1;
+        }
+
+        li {
+            padding: 0.25em 0;
+        }
+    }
+
     ul {
         @media (max-width: $small) {
             display: none;
